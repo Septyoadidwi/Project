@@ -1,0 +1,84 @@
+<html>
+    <head> 
+        <title>Belajar javascript | 2021</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="" class="logo">Logo</a>
+            <ul>
+            <li href="#"> <a href="" class="active">Home</a></li>
+            <li href="#"> <a href="">About</a></li>
+            <li href="#"> <a href="">Work</a></li>
+            <li href="#"> <a href="">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <h2 id="text">Moon Light</h2>
+            <a href="#" id="btn">Explore</a>
+            <img src="mountains_behind.png" id="mountains_behind">
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec">
+            <h2>
+                parax scrolling effect
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit expedita autem perspiciatis debitis nemo animi alias obcaecati laudantium libero saepe id, quo quos cupiditate, aliquid eius facilis repellendus, provident praesentium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita delectus corporis repellendus iure ab nesciunt, ad sint cumque, consequatur numquam accusantium possimus soluta illo asperiores magni veniam tempore reiciendis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deleniti ut necessitatibus ullam voluptate! Dolores facilis est ipsam tempora amet, non repellendus omnis. Esse, minima at similique numquam nam itaque?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque reiciendis incidunt eius in facere, et consectetur unde natus rem esse nostrum repellendus, suscipit ipsum illo quae! Ut, soluta minima!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic voluptates neque accusantium praesentium adipisci eos quod, laborum harum ducimus deserunt sapiente iste inventore minima ratione vitae iure modi unde.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit expedita autem perspiciatis debitis nemo animi alias
+                obcaecati laudantium libero saepe id, quo quos cupiditate, aliquid eius facilis repellendus, provident praesentium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita delectus corporis repellendus iure ab nesciunt,
+                ad sint cumque, consequatur numquam accusantium possimus soluta illo asperiores magni veniam tempore reiciendis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deleniti ut necessitatibus ullam voluptate! Dolores
+                facilis est ipsam tempora amet, non repellendus omnis. Esse, minima at similique numquam nam itaque?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque reiciendis incidunt eius in facere, et
+                consectetur unde natus rem esse nostrum repellendus, suscipit ipsum illo quae! Ut, soluta minima!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic voluptates neque accusantium praesentium adipisci eos
+                quod, laborum harum ducimus deserunt sapiente iste inventore minima ratione vitae iure modi unde.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit expedita autem perspiciatis debitis nemo animi alias
+                obcaecati laudantium libero saepe id, quo quos cupiditate, aliquid eius facilis repellendus, provident praesentium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita delectus corporis repellendus iure ab nesciunt,
+                ad sint cumque, consequatur numquam accusantium possimus soluta illo asperiores magni veniam tempore reiciendis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deleniti ut necessitatibus ullam voluptate! Dolores
+                facilis est ipsam tempora amet, non repellendus omnis. Esse, minima at similique numquam nam itaque?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque reiciendis incidunt eius in facere, et
+                consectetur unde natus rem esse nostrum repellendus, suscipit ipsum illo quae! Ut, soluta minima!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi hic voluptates neque accusantium praesentium adipisci eos
+                quod, laborum harum ducimus deserunt sapiente iste inventore minima ratione vitae iure modi unde.
+            </p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let mountains_front = document.getElementById('mountains_front');
+            let btn = document.getElementById('btn');
+            let text = document.getElementById('text');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 10.5 + 'px';
+            })
+        </script>
+    </body>
+</html>

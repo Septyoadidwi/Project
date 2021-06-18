@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href=""><img src="logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What new</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not jsut Coffee <br> It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel magnam repellendus maxime alias cum quis, vero quae porro ullam quod fuga perspiciatis aliquid quisquam officiis placeat nihil, accusantium ad!</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="imageBox">
+                <img src="img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png')"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+    </script>
+</body>
+
+</html>
